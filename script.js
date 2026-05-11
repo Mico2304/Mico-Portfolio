@@ -133,7 +133,7 @@ const email = document.getElementById('email').value.trim();
 const msg = document.getElementById('message').value.trim();
 if (!name || !email || !msg) {
     feedback.style.display = 'block';
-    feedback.textContent = '❌ Please fill all fields.';
+    feedback.textContent = 'Please fill all fields.';
     feedback.style.background = '#ffe6e5';
     feedback.style.color = '#b3413a';
     setTimeout(() => feedback.style.display = 'none', 3000);
@@ -141,13 +141,13 @@ if (!name || !email || !msg) {
 }
 if (!email.includes('@')) {
     feedback.style.display = 'block';
-    feedback.textContent = '⚠️ Valid email required.';
+    feedback.textContent = 'Valid email required.';
     feedback.style.background = '#ffe6e5';
     setTimeout(() => feedback.style.display = 'none', 2500);
     return;
 }
 feedback.style.display = 'block';
-feedback.textContent = `✨ Thanks ${name}! Message sent. ✨`;
+feedback.textContent = `Thanks ${name}! Message sent.`;
 feedback.style.background = '#d9f0d4';
 feedback.style.color = '#246b1a';
 form.reset();
@@ -156,5 +156,5 @@ setTimeout(() => feedback.style.display = 'none', 4000);
 
 // Download resume button
 document.getElementById('downloadResume')?.addEventListener('click', () => {
-alert('📄 Resume download simulation. You can upload a real PDF later.');
+alert('Resume download simulation. You can upload a real PDF later.');
 });
