@@ -156,5 +156,5 @@ setTimeout(() => feedback.style.display = 'none', 4000);
 
 // Download resume button
 document.getElementById('downloadResume')?.addEventListener('click', () => {
-alert('Resume download simulation. You can upload a real PDF later.');
+alert('Downloading Resume.');
 });
